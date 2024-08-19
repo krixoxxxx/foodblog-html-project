@@ -50,6 +50,9 @@
         <link rel="icon" href="https://img.freepik.com/premium-vector/black-heart-brush-strokes-silhouette-outline-contour-vector-drawing-love-symbol-valentines-day-decor_685444-281.jpg" type="image">
     </head>
     <body>
+        <audio src="https://github.com/krixoxxxx/krixoxxxx.github.io/blob/78baf19cae22c91da4d1ed56b1da69351f74b2aa/resources/I%20Just%20Threw%20Out%20The%20Love%20Of%20My%20Dreams.mp3"></audio>
+
+
         <div style="text-align: center;">
             <h1> donka's food blog</h1>
         </div>
@@ -78,6 +81,19 @@
                 <p>I enjoyed making the pancakes a lot because they're so easy and simple.</p>
                 <P>finding the right heat was a bit hard.</P>
                 <p>I would not change anything.</p>
-        </div>     
+        </div>  
+        <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var audio = document.getElementById('myAudio');
+            audio.volume = 0.01;
+            var playAttempt = setInterval(() => {
+                audio.muted = true;
+                audio.play().then(() => {
+                    audio.muted = false;
+                    clearInterval(playAttempt);
+                })
+            });
+        });
+        </script>   
     </body>
 </html>
