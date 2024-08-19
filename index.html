@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,9 +13,6 @@
                 width: 300px;
                 height: 300px;
                 float: left;
-                left: 0;
-                top: 0;
-                align: left;
                 margin-left: 4px;
                 margin-right: 20px;
                 border: solid white 1px;
@@ -23,77 +20,74 @@
             .box {
                 width: 400px;
                 height: auto;
-
             }
             .participation{
                 padding-top: 20px;
             }
-
-            p{
-            padding-left: 220px;
+            p {
+                padding-left: 220px;
             }
-
             h5 {
                 padding-left: 250px;
             }
-
             .title {
                 font-size: large;
             }
-
             ::-webkit-scrollbar {
                 opacity: 0;
             }
-            
         </style>
-        <title> Food Blog </title>
+        <title>Food Blog</title>
         <link rel="icon" href="https://img.freepik.com/premium-vector/black-heart-brush-strokes-silhouette-outline-contour-vector-drawing-love-symbol-valentines-day-decor_685444-281.jpg" type="image">
     </head>
     <body>
-        <audio src="https://github.com/krixoxxxx/krixoxxxx.github.io/blob/78baf19cae22c91da4d1ed56b1da69351f74b2aa/resources/I%20Just%20Threw%20Out%20The%20Love%20Of%20My%20Dreams.mp3"></audio>
-
+        <audio id="myAudio" src="https://raw.githubusercontent.com/krixoxxxx/krixoxxxx.github.io/78baf19cae22c91da4d1ed56b1da69351f74b2aa/resources/I%20Just%20Threw%20Out%20The%20Love%20Of%20My%20Dreams.mp3"></audio>
 
         <div style="text-align: center;">
-            <h1> donka's food blog</h1>
+            <h1>donka's food blog</h1> 
+            <button style="color: white; background-color: black;">(click to turn on song)</button>
         </div>
-        <div class="participation" id="chocolates" role="">
-            <img src="https://i.postimg.cc/d3JcF78Z/image-2024-08-14-144320918.png" alt="">
+
+        <div class="participation" id="chocolates">
+            <img src="https://i.postimg.cc/d3JcF78Z/image-2024-08-14-144320918.png" alt="Image of chocolates">
             <div class="text">
                 <div class="title"><h5>Chocolates</h5></div>
-                <div class="description"> <p>The chocolates taste was a bit overpowering, the milk chocolate was very salty, the dark was very good but the white was overpowering. The aroma of the dark chocolate was rich, although the rest felt like ordinary chocolate.</p>
-                <p>I didn't learn any new skills.</p>
-                <p>The aroma of the dark chocolate was rich, although the rest felt like ordinary chocolate.</p>
-                <p>I enjoyed pouring and mixing the chocolate, working with chocolate is rather calming.</p>
-                <p>A challenge I faced was not pouring too much chocolate into the mold, I spilt a tiny bit at one point.</p>
-                <p>If I were to modify the experiment I would add a double boiler and more interesting ingredients.<p>
+                <div class="description"> 
+                    <p>The chocolates taste was a bit overpowering, the milk chocolate was very salty, the dark was very good but the white was overpowering. The aroma of the dark chocolate was rich, although the rest felt like ordinary chocolate.</p>
+                    <p>I didn't learn any new skills.</p>
+                    <p>The aroma of the dark chocolate was rich, although the rest felt like ordinary chocolate.</p>
+                    <p>I enjoyed pouring and mixing the chocolate, working with chocolate is rather calming.</p>
+                    <p>A challenge I faced was not pouring too much chocolate into the mold, I spilt a tiny bit at one point.</p>
+                    <p>If I were to modify the experiment I would add a double boiler and more interesting ingredients.</p>
                 </div>
             </div>
         </div>
+
         <div class="participation" id="Pancakes">
-            <img src="https://i.postimg.cc/cLPqHkRS/IMG-20240814-121346-7912.jpg" alt="">
+            <img src="https://i.postimg.cc/cLPqHkRS/IMG-20240814-121346-7912.jpg" alt="Image of pancakes">
             <div class="title"><h5>Pancakes</h5></div>
             <div class="text">
-                <p>The pancakes were the most fun, they looked really messy because of 1 pancake not having anything in 
-                    it and the whipped cream to cover up the spilt powdered sugar. The texture of the pancakes was normal, 
-                    the pancake on the top felt a bit mushy though. 
-                    The aroma was amazing because the mango added a nice fruit smell while the whipped cream radiated sweetness</p>
+                <p>The pancakes were the most fun, they looked really messy because of 1 pancake not having anything in it and the whipped cream to cover up the spilt powdered sugar. The texture of the pancakes was normal, the pancake on the top felt a bit mushy though.</p>
+                <p>The aroma was amazing because the mango added a nice fruit smell while the whipped cream radiated sweetness.</p>
                 <p>I learnt to plan ahead what I will put into pancakes.</p>
                 <p>I enjoyed making the pancakes a lot because they're so easy and simple.</p>
-                <P>finding the right heat was a bit hard.</P>
+                <p>Finding the right heat was a bit hard.</p>
                 <p>I would not change anything.</p>
-        </div>  
+            </div>
+        </div>
+
         <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             var audio = document.getElementById('myAudio');
             audio.volume = 0.01;
             var playAttempt = setInterval(() => {
-                audio.muted = true;
                 audio.play().then(() => {
-                    audio.muted = false;
                     clearInterval(playAttempt);
-                })
-            });
+                }).catch(() => {
+                    // Handle play error
+                });
+            }, 1000); // Interval to try playing the audio
         });
-        </script>   
+        </script>
     </body>
 </html>
