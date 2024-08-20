@@ -45,7 +45,7 @@
 
         <div style="text-align: center;">
             <h1>donka's food blog</h1> 
-            <button style="color: white; background-color: black;">(click to turn on song)</button>
+            <button style="color: white; background-color: black;" id="songSwitch" onclick="toggleAudio()">(click to turn on song)</button>
         </div>
 
         <div class="participation" id="chocolates">
@@ -77,17 +77,18 @@
         </div>
 
         <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
+            function toggleAudio() {
             var audio = document.getElementById('myAudio');
             audio.volume = 0.01;
-            var playAttempt = setInterval(() => {
-                audio.play().then(() => {
-                    clearInterval(playAttempt);
-                }).catch(() => {
-                    // Handle play error
-                });
-            }, 1000); // Interval to try playing the audio
-        });
+            var button = document.getElementById('songSwitch')
+            
+            if (audio.paused) {
+                audio.play();
+                button.textContent = "Pause Song";
+            } else {
+                audio.pause()
+                button.textContent = "Play Song";
+            }}
         </script>
     </body>
 </html>
