@@ -21,9 +21,6 @@
                 width: 400px;
                 height: auto;
             }
-            .participation{
-                padding-top: 20px;
-            }
             p {
                 padding-left: 220px;
             }
@@ -36,6 +33,21 @@
             ::-webkit-scrollbar {
                 opacity: 0;
             }
+            @media screen and (max-width: 600px) {
+            img {
+                width: 100%;
+                float: none;
+                margin: 0 auto 10px auto;
+                display: block;
+            }
+            .box, .participation, p, h5 {
+                width: 100%;
+                max-width: 100%;
+                padding: 0;
+                text-align: center;
+                margin-left: 0;
+            }
+        }
         </style>
         <title>Food Blog</title>
         <link rel="icon" href="https://img.freepik.com/premium-vector/black-heart-brush-strokes-silhouette-outline-contour-vector-drawing-love-symbol-valentines-day-decor_685444-281.jpg" type="image">
