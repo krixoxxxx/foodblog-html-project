@@ -1,156 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Comic Sans MS;
-        }
-
-        .participation {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-
-        .participation img {
-            width: 300px;
-            height: 300px;
-            margin-right: 20px;
-            border: solid white 1px;
-        }
-
-        .text {
-            flex: 1; /* This will make the text take up the remaining space */
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Vertically center the text */
-        }
-
-        .title {
-            font-size: large;
-        }
-
-        ::-webkit-scrollbar {
-            opacity: 0;
-        }
-
-        /* Responsive Styles */
-        @media screen and (max-width: 600px) {
-            .participation {
-                flex-direction: column;
-                text-align: center;
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-color: black;
+                color: white;
+                font-family: Comic Sans Ms;
             }
-
-            .participation img {
-                width: 100%;
+            img {
+                width: 300px;
+                height: 300px;
+                float: left;
+                margin-left: 4px;
+                margin-right: 20px;
+                border: solid white 1px;
+            }
+            .box {
+                width: 400px;
                 height: auto;
-                margin: 0 auto 10px auto;
             }
+            p {
+                padding-left: 220px;
+            }
+            h5 {
+                padding-left: 250px;
+            }
+            .title {
+                font-size: large;
+            }
+            ::-webkit-scrollbar {
+                opacity: 0;
+            }
+            @media screen and (max-width: 600px) {
+            img {
+                width: 100%;
+                float: none;
+                margin: 0 auto 10px auto;
+                display: block;
 
-            .text {
+            }
+            .box, .participation, p, h5 {
+                width: 100%;
+                max-width: 100%;
                 padding: 0;
+                text-align: center;
                 margin-left: 0;
             }
+            .text {
+                flex: 1;
+                justify-content: center;
+            }
         }
-    </style>
-    <title>Food Blog</title>
-    <link rel="icon" href="https://img.freepik.com/premium-vector/black-heart-brush-strokes-silhouette-outline-contour-vector-drawing-love-symbol-valentines-day-decor_685444-281.jpg" type="image">
-</head>
-<body>
-    <audio id="myAudio" src="https://raw.githubusercontent.com/krixoxxxx/krixoxxxx.github.io/78baf19cae22c91da4d1ed56b1da69351f74b2aa/resources/I%20Just%20Threw%20Out%20The%20Love%20Of%20My%20Dreams.mp3" loop></audio>
+        </style>
+        <title>Food Blog</title>
+        <link rel="icon" href="https://img.freepik.com/premium-vector/black-heart-brush-strokes-silhouette-outline-contour-vector-drawing-love-symbol-valentines-day-decor_685444-281.jpg" type="image">
+    </head>
+    <body>
+        <audio id="myAudio" src="https://raw.githubusercontent.com/krixoxxxx/krixoxxxx.github.io/78baf19cae22c91da4d1ed56b1da69351f74b2aa/resources/I%20Just%20Threw%20Out%20The%20Love%20Of%20My%20Dreams.mp3" loop></audio>
 
-    <div style="text-align: center;">
-        <h1>donka's food blog</h1>
-        <button style="color: white; background-color: black; margin-bottom: 20px;" id="songSwitch" onclick="toggleAudio()">(click to turn on song)</button>
-    </div>
-
-    <div class="participation" id="chocolates">
-        <img src="https://i.postimg.cc/d3JcF78Z/image-2024-08-14-144320918.png" alt="Image of chocolates">
-        <div class="text">
-            <h5 class="title">Chocolates</h5>
-            <p>The chocolates' taste was a bit overpowering, the milk chocolate was very salty, the dark was very good but the white was overpowering. The aroma of the dark chocolate was rich, although the rest felt like ordinary chocolate.</p>
-            <p>I didn't learn any new skills.</p>
-            <p>I enjoyed pouring and mixing the chocolate, working with chocolate is rather calming.</p>
-            <p>A challenge I faced was not pouring too much chocolate into the mold, I spilt a tiny bit at one point.</p>
-            <p>If I were to modify the experiment, I would add a double boiler and more interesting ingredients.</p>
+        <div style="text-align: center;">
+            <h1>donka's food blog</h1> 
+            <button style="color: white; background-color: black; margin-bottom: 20px;" id="songSwitch" onclick="toggleAudio()">(click to turn on song)</button>
         </div>
-    </div>
 
-    <div class="participation" id="Pancakes">
-        <img src="https://i.postimg.cc/cLPqHkRS/IMG-20240814-121346-7912.jpg" alt="Image of pancakes">
-        <div class="text">
-            <h5 class="title">Pancakes</h5>
-            <p>The pancakes were the most fun. They looked really messy because of one pancake not having anything in it, and the whipped cream to cover up the spilt powdered sugar. The texture of the pancakes was normal, though the top pancake felt a bit mushy.</p>
-            <p>The aroma was amazing because the mango added a nice fruit smell while the whipped cream radiated sweetness.</p>
-            <p>I learnt to plan ahead for what I will put into pancakes.</p>
-            <p>I enjoyed making the pancakes a lot because they're so easy and simple.</p>
-            <p>Finding the right heat was a bit hard.</p>
-            <p>I would not change anything.</p>
+        <div class="participation" id="chocolates">
+            <img src="https://i.postimg.cc/d3JcF78Z/image-2024-08-14-144320918.png" alt="Image of chocolates">
+            <div class="text">
+                <div class="title"><h5>Chocolates</h5></div>
+                <div class="text"> 
+                    <p>The chocolates taste was a bit overpowering, the milk chocolate was very salty, the dark was very good but the white was overpowering. The aroma of the dark chocolate was rich, although the rest felt like ordinary chocolate.</p>
+                    <p>I didn't learn any new skills.</p>
+                    <p>The aroma of the dark chocolate was rich, although the rest felt like ordinary chocolate.</p>
+                    <p>I enjoyed pouring and mixing the chocolate, working with chocolate is rather calming.</p>
+                    <p>A challenge I faced was not pouring too much chocolate into the mold, I spilt a tiny bit at one point.</p>
+                    <p>If I were to modify the experiment I would add a double boiler and more interesting ingredients.</p>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="participation" id="burritoBowl">
-        <img src="https://i.postimg.cc/RFZ9GVHn/20240821-095643.jpg" alt="BURRITOBOWL">
-        <div class="text">
-            <h5 class="title">Burrito Bowl</h5>
-            <p>The burrito bowl was a bit "meh." The rice got burnt, and the table got messy. However, the food tasted amazing! The beef was dry, but the mix of sour cream, salsa, rice, and beef was simply supreme.</p>
-            <p>The food had a rich aroma due to the beef, and the touch of lemon juice was great.</p>
-            <p>I learnt to use lower heat to reduce liquids better.</p>
-            <p>I enjoyed this because it was really delicious.</p>
-            <p>I burnt the rice. :C</p>
-            <p>I'd use a rice cooker next time—cooking in a pot was painful.</p>
+        <div class="participation" id="Pancakes">
+            <img src="https://i.postimg.cc/cLPqHkRS/IMG-20240814-121346-7912.jpg" alt="Image of pancakes">
+            <div class="title"><h5>Pancakes</h5></div>
+            <div class="text">
+                <p>The pancakes were the most fun, they looked really messy because of 1 pancake not having anything in it and the whipped cream to cover up the spilt powdered sugar. The texture of the pancakes was normal, the pancake on the top felt a bit mushy though.</p>
+                <p>The aroma was amazing because the mango added a nice fruit smell while the whipped cream radiated sweetness.</p>
+                <p>I learnt to plan ahead what I will put into pancakes.</p>
+                <p>I enjoyed making the pancakes a lot because they're so easy and simple.</p>
+                <p>Finding the right heat was a bit hard.</p>
+                <p>I would not change anything.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="participation" id="milkShake">
-        <img src="https://i.postimg.cc/NjqTMxbD/20240828-122328.jpg" alt="milkshake">
-        <div class="text">
-            <h5 class="title">Milkshake</h5>
-            <p>The milkshake was amazing! I had two of them. They were a little messy and runny, and the chocolate at the bottom didn’t blend, but they were still delicious.</p>
-            <p>The smell was strong with caramel and Oreo—a very sweet aroma.</p>
-            <p>I learnt that I should definitely blend for longer.</p>
-            <p>I enjoyed the milkshakes because they were simply amazing.</p>
-            <p>The milkshake wasn't fully blended.</p>
-            <p>I'd have more chocolate.</p>
+        <div class="participation" id="burritoBowl">
+            <img src="https://i.postimg.cc/RFZ9GVHn/20240821-095643.jpg" alt="BURRITOBOWL">
+            <div class="title"><h5>Burrito Bowl</h5></div>
+            <div class="text">
+                <p>The burrito bowl was a bit meh, the rice got burnt and the table got pretty messy at times. The food tasted amazing though, the beef was a bit dry but it tasted really good, the mix of sour cream salsa rice and beef was simply supreme.</p>
+                <p>The food had a rich aroma because of the beef, the touch of lemon juice was also great.</p>
+                <p>I learnt to use lower heats so I can reduce liquids better.</p>
+                <p>I enjoyed this because it was really delicious.</p>
+                <p>I burnt the rice. :C</p>
+                <p>I'd use a rice cooker, cooking in a pot was painful.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="participation" id="rockyRoad">
-        <img src="https://i.postimg.cc/X7p6H8LQ/20240828-125549.jpg" alt="rockyroad">
-        <div class="text">
-            <h5 class="title">Rocky Road</h5>
-            <p>The rocky road wasn’t as good—it was very thick and just mediocre.</p>
-            <p>Didn’t have much of an aroma except for a light Oreo.</p>
-            <p>I learnt to better plan chocolate-making.</p>
-            <p>I enjoyed the rocky road a bit, but it was too chunky to eat properly.</p>
-            <p>The rocky road didn’t solidify fast enough.</p>
-            <p>I'd use a bigger tray so the chocolate isn’t as chunky.</p>
+        <div class="participation" id="milkShake">
+            <img src="https://i.postimg.cc/NjqTMxbD/20240828-122328.jpg" alt="milkshake">
+            <div class="title"><h5>Milkshake</h5></div>
+            <div class="text">
+                <p>THE MILKSHAKE WAS AMAZING I HAD 2 OF THEM, they were a lil bit messy though, they were runny and the chocolate at the bottom didn't blend, but they were still amazing.</p>
+                <p>The smell was strong with caramel and oreo, it was a very sweet aroma.</p>
+                <p>learnt that I should definitely blend for longer</p>
+                <p>I enjoyed the milkshakes because they were simply amazing.</p>
+                <p>The milkshake wasnt fully blended.</p>
+                <p>I'd have more chocolate.</p>
+                <p>&nbsp;</p>
+            </div>
         </div>
-    </div>
 
-    <div class="participation" id="softTaco">
-        <img src="https://i.postimg.cc/q7df7dT5/20240904-095102.jpg" alt="soft taco">
-        <div class="text">
-            <h5 class="title">Soft Tacos</h5>
-            <p>The tacos were a bit salty but very good—they were very messy but still amazing.</p>
-            <p>The aroma was very rich in umami because of all the seasonings and beef stock.</p>
-            <p>I didn’t learn anything new.</p>
-            <p>I enjoyed the tacos a lot—the mess was okay because everything was amazing.</p>
-            <p>The tacos wouldn’t stay together.</p>
-            <p>I'd add more meat so the tacos would be yummier.</p>
+        <div class="participation" id="rockyRoad">
+            <img src="https://i.postimg.cc/X7p6H8LQ/20240828-125549.jpg" alt="rockyroad">
+            <div class="title"><h5>Rocky Road</h5></div>
+            <div class="text">
+                <p>The rocky road wasnt as good, it was very thick and just mediocre.</p>
+                <p>Didn't have much of an aroma except for a light oreo.</p>
+                <p>I learnt to better plan chocolate-making.</p>
+                <p>I enjoyed the rocky road a bit, but it was too chunky to eat properly.</p>
+                <p>The rocky road didnt solidify fast enough</p>
+                <p>I'd have a bigger tray so the chcoolate isnt as chunky.</p>
+                
+            </div>
         </div>
-    </div>
 
-    <script>
-        function toggleAudio() {
+        <div class="participation" id="softTaco">
+            <img src="https://i.postimg.cc/q7df7dT5/20240904-095102.jpg" alt="">
+            <div class="title"><h5>Soft Tacos</h5></div>
+            <div class="text">
+                <p>The tacos were a bit salty but they were very good, they were very messy but still amazing.</p>
+                <p>The aroma was very rich in umami because of all the seasonings and beef stock.</p>
+                <p>I didn't learn anything new</p>
+                <p>I enjoyed the tacos a lot, the mess was okay but everything was amazing.</p>
+                <p>The tacos wouldnt stay together.</p>
+                <p>I'd have more meat so the tacos would be yummier.</p>
+                
+            </div>
+        </div>
+
+        <script>
+            function toggleAudio() {
             var audio = document.getElementById('myAudio');
             audio.volume = 0.01;
-            var button = document.getElementById('songSwitch');
+            var button = document.getElementById('songSwitch')
             
             if (audio.paused) {
                 audio.play();
                 button.textContent = "Pause Song";
+            } else {
+                audio.pause()
+                button.textContent = "Play Song";
+            }}
+        </script>
+    </body>
+</html>
