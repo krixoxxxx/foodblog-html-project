@@ -1,0 +1,81 @@
+To make **`domain1.com`** feel like a multipage website with internal navigation (similar to navigating from a home page to a contact page), you can create multiple HTML files (one for each "page") and link them together. Here’s how to set up the internal
+pages: ### Steps to Set Up Internal Pages on `domain1.com` 1. **Create Multiple HTML Files**: - In this example, we’ll create two pages for `domain1.com`: a **Home** page (`index.html`) and an **About** page (`about.html`). - Each page will have a navigation
+menu to switch between pages. #### `index.html` (Home Page) ```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Domain1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        nav {
+            margin: 20px;
+        }
+        
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <h1>Welcome to Domain1.com</h1>
+    <p>This is the homepage of Domain1.com. Click on "About" to learn more!</p>
+</body>
+
+</html>
+``` #### `about.html` (About Page) ```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Domain1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        nav {
+            margin: 20px;
+        }
+        
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <h1>About Us</h1>
+    <p>Welcome to the About page of Domain
