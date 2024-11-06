@@ -41,6 +41,26 @@
             opacity: 0;
         }
         
+        .audioButton: {
+            color: white;
+            background-color: black;
+            border-style: solid;
+        }
+        
+        .audioButton:active {
+            transition: opacity 0.5s;
+            cursor: pointer;
+            background-color: white;
+        }
+        /* Hover Effect */
+        
+        .audioButton:hover {
+            opacity: 1;
+            background-color: #d9d4d4;
+            color: #f0f0f0;
+            cursor: pointer;
+        }
+        
         @media screen and (max-width: 600px) {
             img {
                 width: 100%;
@@ -62,9 +82,6 @@
                 flex: 1;
                 justify-content: center;
             }
-            .audioButton {
-                transition: 0.15s;
-            }
         }
     </style>
     <title>Food Blog</title>
@@ -76,7 +93,7 @@
 
     <div style="text-align: center;">
         <h1>donka's food blog</h1>
-        <button class="audioButton" style="color: white; background-color: black; margin-bottom: 20px;" id="songSwitch" onclick="toggleAudio()">(click to turn on song)</button>
+        <button class="audioButton" id="songSwitch" onclick="toggleAudio()">(click to turn on song)</button>
     </div>
 
     <div class="participation" id="chocolates">
@@ -107,7 +124,8 @@
         </div>
         <div class="text">
             <p>The pancakes were the most fun, they looked really messy because of 1 pancake not having anything in it and the whipped cream to cover up the spilt powdered sugar. The texture of the pancakes was normal, the pancake on the top felt a bit mushy
-                though.</p>
+                though.
+            </p>
             <p>The aroma was amazing because the mango added a nice fruit smell while the whipped cream radiated sweetness.</p>
             <p>I learnt to plan ahead what I will put into pancakes.</p>
             <p>I enjoyed making the pancakes a lot because they're so easy and simple.</p>
