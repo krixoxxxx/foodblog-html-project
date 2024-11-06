@@ -41,23 +41,25 @@
             opacity: 0;
         }
         
-        .audioButton: {
+        .audioButton {
             color: white;
             background-color: black;
             border-style: solid;
+            border: 2px solid white;
+            height: 30px;
+            width: 170px;
+            border-radius: 15px;
         }
         
         .audioButton:active {
             transition: opacity 0.5s;
             cursor: pointer;
-            background-color: white;
+            background-color: rgb(255, 255, 255);
         }
-        /* Hover Effect */
         
         .audioButton:hover {
-            opacity: 1;
-            background-color: #d9d4d4;
-            color: #f0f0f0;
+            transition: opacity 0.12s;
+            background-color: rgb(44, 44, 44);
             cursor: pointer;
         }
         
