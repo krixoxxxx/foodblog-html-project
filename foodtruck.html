@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Comic Sans Ms;
+        }
+        
+        .title {
+            font-size: large;
+        }
+        
+        img {
+            width: 300px;
+            height: auto;
+            float: left;
+            margin-left: 4px;
+            margin-right: 20px;
+            border: solid white 1px;
+        }
+        
+         ::-webkit-scrollbar {
+            opacity: 0;
+        }
+        
+        .audioButton {
+            color: white;
+            background-color: black;
+            border-style: solid;
+            border: 2px solid white;
+            height: 30px;
+            width: 170px;
+            border-radius: 15px;
+        }
+        
+        .audioButton:active {
+            transition: opacity 0.5s;
+            cursor: pointer;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .audioButton:hover {
+            transition: opacity 0.12s;
+            background-color: rgb(44, 44, 44);
+            cursor: pointer;
+        }
+        
+        @media screen and (max-width: 600px) {
+            img {
+                width: 100%;
+                float: none;
+                margin: 0 auto 10px auto;
+                display: block;
+            }
+            .box,
+            .participation,
+            p,
+            h5 {
+                width: 100%;
+                max-width: 100%;
+                padding: 0;
+                text-align: center;
+                margin-left: 0;
+            }
+            .text {
+                flex: 1;
+                justify-content: center;
+            }
+        }
+    </style>
+    <title>Food Blog</title>
+    <link rel="icon" href="https://img.freepik.com/premium-vector/black-heart-brush-strokes-silhouette-outline-contour-vector-drawing-love-symbol-valentines-day-decor_685444-281.jpg" type="image">
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>donka's food truck</h1>
+        <button class="audioButton" id="songSwitch" onclick="toggleAudio()">(click to turn on song)</button>
+        <button class="audioButton"><a href="index.html" style="color: white;">foodtruck</a></button>
+    </div>
+
+    <p>
+        <img src="https://i.postimg.cc/sXk0pBKh/image.png" style="border-radius: 10px; background-color: rgb(211, 137, 0); width: 300px; height: 100px;" alt="">
+    </p>
+    <p>
+        Our food truck has been carefully thought through in order to create the yummiest thai food!
+    </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <img src="https://i.postimg.cc/YCC8LfkP/image.png" alt="">
+    <p class="title">Khanom Tokyo (savoury)</p>
+    <p>Khanom Tokyo is a special dish to me, as a child there was this man who would come by on a food cart and make big ones, I remember them having a distinct salty hint that I loved, it can be sweet or salty and that makes it even better to me</p>
+    <p>It has an amazing aroma, the fillings smell really nice especially with the addition of the green onion!</p>
+    <p>I learnt I need to properly label each parts measurements.</p>
+    <p>I enjoyed this a lot since it was rather nostalgic.</p>
+    <p>The fillings were hard, we had to cook all the pork first which we didnt do at the start, then we had to cook the batter which had to start at low heat while it cooked through then was turned up when the egg went in, overall rather challenging.</p>
+    <p>I would add some sweetness to it!</p>
+
+
+</body>
