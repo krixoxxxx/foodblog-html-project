@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <audio id="myAudio" src="https://raw.githubusercontent.com/krixoxxxx/krixoxxxx.github.io/78baf19cae22c91da4d1ed56b1da69351f74b2aa/resources/I%20Just%20Threw%20Out%20The%20Love%20Of%20My%20Dreams.mp3" loop></audio>
+    <audio id="myAudio" src="./resources/music/I Just Threw Out The Love Of My Dreams.mp3" loop></audio>
 
     <div style="text-align: center;">
         <h1>donka's food blog</h1>
-        <button class="audioButton" id="songSwitch" onclick="toggleAudio()">(click to turn on song)</button>
-        <a href="foodtruck.html"><button class="audioButton">foodtruck</button></a>
+        <button class="audiobutton" id="songSwitch" onclick="toggleAudio()">(click to turn on song)</button>
+        <a href="foodtruck.html"><button class="audiobutton">foodtruck</button></a>
     </div>
 <hr>
     <div class="foods" id="chocolates">
@@ -145,22 +145,7 @@
         </div>
     </div>
  <hr>
-    <script>
-        function toggleAudio() {
-            var audio = document.getElementById('myAudio');
-            audio.volume = 0.01;
-            var button = document.getElementById('songSwitch')
-
-            if (audio.paused) {
-                audio.play();
-                button.textContent = "Pause Song";
-            } else {
-                audio.pause()
-                button.textContent = "Play Song";
-            }
-        }
-        window.history.replaceState('', '', '/');
-    </script>
+<script src="audioplayer.js"></script>
 </body>
 
 </html>
